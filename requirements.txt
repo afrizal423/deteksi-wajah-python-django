@@ -1,0 +1,7 @@
+Django
+opencv-python
+scikit-learn
+pymysql
+Pillow
+matplotlib
+opencv-contrib-python
