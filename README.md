@@ -29,7 +29,7 @@ pip install -r requirements.txt
 Buat database di phpmyadmin / sejenisnya dengan nama database django_project <br>
 Lalu buka terminal, jalankan dengan perintah
 ```bash
-python manage.py migrate && python manage.py runserver
+python manage.py migrate && python manage.py runserver --nothreading
 ```
 ## Demo <br>
 [Coming soon](https://dj.afrizalmy.com)<br>
