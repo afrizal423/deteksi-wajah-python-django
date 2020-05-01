@@ -31,8 +31,10 @@ Lalu buka terminal, jalankan dengan perintah
 ```bash
 python manage.py migrate && python manage.py runserver --nothreading
 ```
-## Demo <br>
-[Coming soon](https://dj.afrizalmy.com)<br>
+## Screenshot <br>
+<img src="ss/1.png" height="450"> <br>
+<img src="ss/2.png" height="450"> <br>
+[Demo Video](https://www.youtube.com/watch?v=p70srlZvyvQ&feature=youtu.be)
 
 ## Thanks to <br>
 [manjillama](https://github.com/manjillama/)
