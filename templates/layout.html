@@ -31,7 +31,14 @@
     <!-- Custom scripts for this template -->
     <script src="{% static 'bootstrap/bootstrap.min.js' %}"></script>
     <script src="{% static 'js/particles.min.js' %}" ></script>
-    <script src="{% static 'script.js' %}"></script>
+    <!-- <script src="{% static 'script.js' %}"></script> -->
+    <script>
+      /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles-js', '/static/particles.json', function() {
+  //console.log('callback - particles.js config loaded');
+});
+
+    </script>
 
   </body>
 

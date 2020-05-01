@@ -2,10 +2,13 @@
 {% load static %}
 {% block title %}Image Recognition | AI Course-work{% endblock %}
 {% block content %}
-<div class="container">
+<div id="particles-js"></div>
+<div class="container" style="background: rgba(0,0,0,0.6);margin-bottom:5em;padding-bottom:3em;color:#fff;border-radius:10px;-webkit-box-shadow: 2px 2px 15px 0px rgba(0, 3, 0, 0.7);
+-moz-box-shadow:    2px 2px 15px 0px rgba(0, 3, 0, 0.7);
+box-shadow:         2px 2px 15px 0px rgba(0, 3, 0, 0.7);">
   <div style="padding-bottom: 2em;text-align:center">
-    <h1 class="text-center" style="color:#047c2a">TOP MATCH</h1>
-    <p>The classifier predicts the person that matches the given face with our top database face. Thus the accuracy might get compromised.*</p>
+    <h1 class="text-center" style="color:#047c2a">HASIL :</h1>
+    <p>Pengklasifikasi memprediksi orang yang cocok dengan wajah yang diberikan dengan wajah pada database kita. Dengan demikian keakuratannya mungkin terganggu. *</p>
   </div>
 
   <!-- <ul>
@@ -21,15 +24,15 @@ box-shadow:         0px 0px 14px 0px rgba(50, 50, 50, 0.5);">
         <div class="col-md-5">
           <div class="row">
             <div class="col-md-8 col-md-offset-2">
-              <img src="{% static '' %}img/{{record.id}}.jpg" class="img-responsive" style="border-radius:50%"/>
+              <img src="{% static '' %}img/unnamed.jpg" class="img-responsive" style="border-radius:50%"/>
             </div>
             <div class="col-md-12" style="text-align:center">
-              <h3 style="color:#d18f02"><b>{{record.first_name}} {{record.last_name}}</b></h3>
-              <h5><b>Education: </b> {{record.education}} </h5>
-              <h5><b>Occupation: </b> {{record.occupation}} </h5>
-              <h5><b>Recidence: </b> {{record.residence}}, {{record.country}}</h5>
-              <h5><b>Marital status: </b> {{record.marital_status}}
-              <h5><b>Date Recorded in System: </b> {{record.recorded_at}}</h5>
+              <h3 style="color:#d18f02"><b>{{record.nama_lengkap}}</b></h3>
+              <h5><b>Pendidikan: </b> {{record.pendidikan}} </h5>
+              <h5><b>Pekerjaan: </b> {{record.pekerjaan}} </h5>
+              <!-- <h5><b>Recidence: </b> {{record.residence}}, {{record.country}}</h5>
+              <h5><b>Marital status: </b> {{record.marital_status}} -->
+              <h5><b>Date Recorded in System: </b> {{record.created_on}}</h5>
             </div>
           </div>
         </div>

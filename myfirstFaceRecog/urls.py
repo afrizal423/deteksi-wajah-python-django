@@ -17,11 +17,14 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url, include
 from myfirstFaceRecog import views as app_views
+from record import views as rec_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$', app_views.index),
     url(r'^detect$', app_views.detect),
-
+    url(r'^create_dataset$', app_views.create_dataset),
+    url(r'^trainer$', app_views.trainer),
+    url(r'^records/details/(?P<id>\d+)/$', rec_views.details, name='details')
 
 ]
